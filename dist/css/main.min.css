@@ -99,6 +99,9 @@ html, body {
   @media screen and (min-width: 2070px) {
     .landing {
       background-size: 70%; } }
+  @media screen and (max-height: 900px) {
+    .landing {
+      background-size: 70%; } }
 
 .about-me {
   padding-top: 5%;
@@ -153,6 +156,9 @@ html, body {
         position: absolute;
         bottom: 20px;
         left: 0; } }
+  @media screen and (max-height: 900px) {
+    .about-me {
+      padding-top: 5%; } }
   @media screen and (min-width: 1440px) {
     .about-me {
       padding-top: 12%; }

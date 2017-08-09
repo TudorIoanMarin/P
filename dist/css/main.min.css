@@ -147,7 +147,7 @@ html, body {
       float: left; } }
   @media screen and (min-width: 1024px) {
     .about-me {
-      height: 102vh;
+      height: 103vh;
       padding-top: 20%;
       position: relative; }
       .about-me .details p {

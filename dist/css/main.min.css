@@ -403,7 +403,9 @@ html, body {
   .contact .media {
     padding: 5%;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    position: relative;
+    bottom: 2.5rem; }
     .contact .media a {
       text-decoration: none; }
     .contact .media .icon {

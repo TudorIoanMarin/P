@@ -1,0 +1,31 @@
+{
+  "name": "gulpPractice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "bootstrap-material-design": "^0.5.10",
+    "bootstrap-sass": "^3.3.7",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.5.1",
+    "gulp-uglify": "^2.1.2",
+    "http-server": "^0.9.0",
+    "normalize.css": "^7.0.0"
+  }
+}

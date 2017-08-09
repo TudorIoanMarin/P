@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, `${__frontend}/index.html`));
 });
 
-const port = process.env.PORT || '8022';
+const port = '22';
 app.set('port', port);
 
 const server = http.createServer(app);

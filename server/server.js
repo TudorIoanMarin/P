@@ -4,7 +4,7 @@ const     express = require('express'),
   serveStatic = require('serve-static'),
    bodyParser = require('body-parser');
 
-const __frontend = '../dist';
+const __frontend = './dist';
 
 const app = express();
 

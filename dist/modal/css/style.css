@@ -44,16 +44,6 @@ button {
 /*    Layout Rules   */
 /*********************/
 
-#my-btn {
-  position: absolute;
-  left: calc( 50% - 75px);
-  top: calc( 50% - 12px);
-  border: 2px solid black;
-  border-radius: 20px;
-  padding: 10px 0;
-  background-color: transparent;
-}
-
 .modal {
   display: none;
   position: fixed;
@@ -212,20 +202,20 @@ body.view-two #submitBtn {
   clear: both;
 }
 
-.invalid {
-  border-bottom: solid 2px darkred !important;
+input.invalid, select.invalid, textarea.invalid  {
+  border-bottom: solid 2px darkred;
 }
 
-.invalid:focus {
-  border-bottom: solid 2px red !important;
+input.invalid:focus, select.invalid:focus, textarea.invalid:focus{
+  border-bottom: solid 2px red;
 }
 
-.valid {
-  border-bottom: solid 2px darkgreen !important;
+input.valid, select.valid, textarea.valid {
+  border-bottom: solid 2px darkgreen;
 }
 
-.valid:focus {
-  border-bottom: solid 2px green !important;
+input.valid:focus, select.valid:focus, textarea.valid:focus,{
+  border-bottom: solid 2px green;
 }
 
 /*********************/
@@ -253,4 +243,12 @@ body.thx h2 {
   width: 100%;
   text-align: center;
   font-size: 2rem;
+}
+
+#my-btn {
+  position: absolute;
+  left: calc( 50% - 75px);
+  top: calc( 50% - 12px);
+  background-color: #337ab7;
+  border-color: #2e6da4;
 }

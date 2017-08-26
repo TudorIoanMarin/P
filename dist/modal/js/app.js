@@ -148,7 +148,6 @@ var Modal = (function(){
       related.style.display = 'block';
     } else {
       related.style.display = 'none';
-      console.log(related.childNodes[3]);
       related.childNodes[3].value = '';
       related.childNodes[3].className = '';
 

@@ -4,8 +4,7 @@ const     express = require('express'),
   serveStatic = require('serve-static'),
    bodyParser = require('body-parser');
 
-const __frontend = '../dist',
-      __modal = '../modal';
+const __frontend = '../dist';
 
 const app = express();
 
@@ -19,10 +18,16 @@ app.get('/', (req, res) => {
 });
 
 app.get('/optymyze', (req, res) => {
-  res.sendFile(path.join(__dirname, `${__modal}/index.html`));
+  app.use(express.static(path.join(__dirname, `${__frontend}/modal`)));
+  res.sendFile(path.join(__dirname, `${__frontend}/modal/index.html`));
+});
+ 
+app.post('/optymyze', (req, res) => {
+  app.use(express.static(path.join(__dirname, `${__frontend}/modal`)));
+  res.sendFile(path.join(__dirname, `${__frontend}/modal/added.html`));
 });
 
-const port = '80';
+const port = '3000';
 app.set('port', port);
 
 const server = http.createServer(app);

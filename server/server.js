@@ -21,13 +21,13 @@ app.get('/optymyze', (req, res) => {
   app.use(express.static(path.join(__dirname, `${__frontend}/modal`)));
   res.sendFile(path.join(__dirname, `${__frontend}/modal/index.html`));
 });
- 
+
 app.post('/optymyze', (req, res) => {
   app.use(express.static(path.join(__dirname, `${__frontend}/modal`)));
   res.sendFile(path.join(__dirname, `${__frontend}/modal/added.html`));
 });
 
-const port = '3000';
+const port = '80';
 app.set('port', port);
 
 const server = http.createServer(app);
